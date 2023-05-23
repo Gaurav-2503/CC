@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode</title>
+    <style>
+        body{
+            align-items: center;
+            justify-items: center;
+        }
+        .inform{
+            display: flex;
+            flex-direction: column;
+            gap:50px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            border-radius: 50px;
+            padding: 50px;
+            width:60%;
+            align-items: center;
+            margin: auto;
+        }
+
+        .btn{
+            width: 40%;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        .btn:hover{
+            background-color: aquamarine;
+        }        
+        .ipt{
+            width:30%;
+            height: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="/" class="inform">
+        <h1>Enter latiude and longitude: </h1>
+        <h2><label>Enter the Latitude</label></h2>
+        <input class="ipt" type="text" pattern="\d*" oninput="this.value=this.value.replace(/\D/g,'')" name="lat" required>
+        <h2><label>Enter the Longitude</label></h2>
+        <input class="ipt" type="text" pattern="\d*" oninput="this.value=this.value.replace(/\D/g,'')" name="longi" required>
+
+        <button class="btn" type="submit">SUBMIT</button>
+    </form>
+</body>
+
+</html>
